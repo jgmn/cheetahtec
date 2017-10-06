@@ -1,30 +1,31 @@
 /* index style css
 
 00 Browser Reset & Common CSS
-01. header CSS
-02. home_area CSS
-03. cta_area CSS
-04. service_area CSS
-05. about_area CSS
-06. cta_area2 CSS
-07. step_area CSS
+01. header CSS +
+02. home_area CSS +
+03. cta_area CSS +
+04. service_area CSS +
+05. about_area CSS +
+06. cta_area2 CSS +
+07. step_area CSS +
 08. video_area CSS
 09. faq_area CSS
-10. form_area CSS
+10. form_area CSS +
 11. testimonial_area CSS
 12. brand_area CSS
 13. news_area CSS
-14. footer CSS
-15. breadcrumb_area CSS
+14. footer CSS +
+15. breadcrumb_area CSS +
 16. fact_area CSS
 17. team_member_area CSS
-18. jobs_tile_area CSS
-19. job_cta_area CSS
-20. s_service_area CSS
-21. work_area CSS
-22. single_work_area CSS
+18. jobs_tile_area CSS +
+19. job_cta_area CSS +
+20. s_service_area CSS +
+21. work_area CSS +
+22. single_work_area CSS +
 23. blog_area CSS
 24. 404 CSS
+25. case_area CSS +
 
 */
 .cPrimary, .button-2:hover, header .header_top .header_link li i, header .header_top .header_link li a:hover, .search_icon:hover, .search_form .search_close, .menu-container ul.menu li ul.sub-menu.mega-menu .menu-column a:hover, .video_area .video_dsc ul li:before, footer .footer_top .widget ul li a:hover, footer .footer_top .widget .footer_social span a:hover, .breadcrumb_area ul li a:hover, .job_cta_area .job_cta a.button-2, .work_area .single_work .h4:hover, .single_work_area .work_content a.button-2, .blog_area .post_col article .entry_header a:hover, .blog_area .post_col article .entry_header > div a:hover, .blog_area .post_col article .entry_header > div a.cPrimary, .blog_area .widget_col .widget ul li a:hover, .blog_area .comment_form form input[type="submit"]:hover, .blog_area .comment_form form .form_area .contact_form .form-group textarea[type="submit"]:hover, .form_area .contact_form .form-group .blog_area .comment_form form textarea[type="submit"]:hover {
@@ -42,7 +43,8 @@
 
 .color2Bg, .overlay-2:before,
 .overlay-3:before, .button:before, .button-3, .faq_area .panel-default .panel-heading ul li.active a {
-  background-color: #19b5fe; }
+  background-color: #28477D;
+  /*background-color: #19b5fe;*/ }
 
 .color2Bo, .step_area .step .single_step > div h3:before {
   border-color: #19b5fe; }
@@ -587,7 +589,8 @@ dl.accordion {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  size: 
+  font-size: 15px;
   font-weight: 400;
   line-height: 24px; }
 
@@ -702,11 +705,22 @@ span {
   background-color: #222222;
   opacity: .6; }
 
+/*Ajuste de color a los hipervinculos*/
+.button:hover, .button:visited {
+  text-decoration: none;
+  color: #222222;
+}
+
+.button-3:hover, .button-3:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
 .button, .button-3 {
   line-height: 55px;
   padding: 0 25px;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-size: 16px;
+  /*text-transform: uppercase;*/
   font-weight: 900;
   box-shadow: 0px -3px 2px -1px rgba(0, 0, 0, 0.5) inset;
   border-radius: 3px;
@@ -726,6 +740,38 @@ span {
 .button-3 {
   color: #fff;
   box-shadow: 0px -3px 2px -1px rgba(0, 0, 0, 0.3) inset; }
+
+/*Ajuste de color de hipervinculos*/
+.button-4:hover, .button-4:visited, .button-5:hover, .button-5:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-4 {
+  text-decoration: none;
+  color: #fff;
+  background-color:  #28477D; /*Azul*/
+  padding: 5px 10px;
+  font-size: 16px;
+  /*text-transform: uppercase;*/
+  font-weight: 500;
+  box-shadow: 0px -3px 2px -1px rgba(0, 0, 0, 0.5) inset;
+  border-radius: 3px;
+  border: none; }
+
+.button-5 {
+  text-decoration: none;
+  color: #fff;
+  /*background-color: #363530;*/ /*Negro*/
+  /*background-color: #028C17;*/ /*Verde*/
+  background-color:  #BF2A2A; /*Rojo*/
+  padding: 5px 10px;
+  font-size: 16px;
+  /*text-transform: uppercase;*/
+  font-weight: 500;
+  box-shadow: 0px -3px 2px -1px rgba(0, 0, 0, 0.5) inset;
+  border-radius: 3px;
+  border: none; }
 
 .grey-bg {
   background-color: #f2f5f7; }
@@ -847,8 +893,8 @@ header {
           margin-right: 7px; }
 
 .logo {
-  padding: 15px 0;
-  margin: 15px 0; }
+  padding: 0 0 0 0;
+  margin: 8px 0 0 0; }
   .logo span {
     height: 40px;
     border: 3px solid;
@@ -1181,11 +1227,15 @@ header {
       height: auto;
       margin-top: 40px; } }
 
+.about_top_content ul li{
+  margin-left: 16px;
+}
+
 .about_area .about_top .about_top_img {
   margin-right: 30px; }
-.about_area .about_top .about_top_content {
-  color: #666;
-  font-size: 16px;
+.about_area .about_top .about_top_content{
+  /*color: #666;*/
+  /*font-size: 16px;*/
   line-height: 30px; }
   .about_area .about_top .about_top_content p:last-child {
     margin-bottom: 0; }
@@ -1273,6 +1323,7 @@ header {
  >>> | 08. video_area CSS|
 *****************************************
 */
+/*
 @media only screen and (min-width: 0px) and (max-width: 991px) {
   .video_area .vdo_h {
     height: auto !important; } }
@@ -1321,13 +1372,14 @@ header {
         position: absolute;
         left: 0;
         top: 0;
-        font-family: 'fontawesome'; }
+        font-family: 'fontawesome'; }*/
 
 /*
  *****************************************
  >>> | 09. faq_area CSS|
  *****************************************
 */
+/*
 .faq_area {
   color: #777777;
   font-size: 15px; }
@@ -1386,7 +1438,7 @@ header {
         .faq_area .panel-default .panel-heading ul li.active a {
           color: #fff; }
     .faq_area .panel-default .panel-body {
-      border: 1px solid #e5e5e5; }
+      border: 1px solid #e5e5e5; }*/
 
 /*
  *****************************************
@@ -1524,15 +1576,17 @@ header {
  >>> | 12. brand_area CSS|
  *****************************************
 */
+/*
 .brand_area h4 {
   font-weight: 400;
-  margin-bottom: 30px; }
+  margin-bottom: 30px; }*/
 
 /*
  *****************************************
  >>> | 13. news_area CSS|
  *****************************************
 */
+/*
 .news_area .news_img img {
   width: 100%; }
 .news_area .news_content .entry-date {
@@ -1554,7 +1608,7 @@ header {
   .news_area .single_news {
     margin-bottom: 40px; }
     .news_area .single_news:last-child {
-      margin-bottom: 0; } }
+      margin-bottom: 0; } }*/
 
 /*
  *****************************************
@@ -1573,6 +1627,7 @@ footer .footer_top {
     footer .footer_top .widget .footer_logo {
       font-size: 25px;
       color: #fff;
+      /*color: #C4922F;*/
       text-transform: uppercase;
       font-weight: 900;
       margin-bottom: 25px; }
@@ -1636,9 +1691,13 @@ footer .footer_btm {
  *****************************************
 */
 .breadcrumb_area {
-  background-color: #f0f0f0;
+ /* background-color: #f0f0f0;
   box-shadow: 0 0 5px rgba(51, 51, 51, 0.1) inset;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;*/
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   padding: 60px 0; }
   .breadcrumb_area h1 {
     font-size: 34px;
@@ -1647,14 +1706,16 @@ footer .footer_btm {
     list-style: none;
     display: inline-block; }
     .breadcrumb_area ul li:before {
-      content: '-';
+      content: '/';
       margin-right: 8px;
       margin-left: 4px; }
     .breadcrumb_area ul li:first-child:before {
       display: none; }
     .breadcrumb_area ul li a, .breadcrumb_area ul li span {
-      text-transform: lowercase;
+      color: #fff;
+      text-transform: capitalize;
       font-size: 18px;
+      font-weight: lighter;
       position: relative; }
     .breadcrumb_area ul li a:before {
       content: '';
@@ -1671,6 +1732,7 @@ footer .footer_btm {
  >>> | 16. fact_area CSS|
  *****************************************
 */
+/*
 .fact_area {
   background-size: cover;
   color: #fff; }
@@ -1702,13 +1764,14 @@ footer .footer_btm {
           margin-bottom: 40px; } }
       @media only screen and (min-width: 480px) and (max-width: 767px) {
         .fact_area .fact .single_fact {
-          width: 50%; } }
+          width: 50%; } }*/
 
 /*
  *****************************************
  >>> | 17. team_member_area CSS|
  *****************************************
 */
+/*
 .team_member_area .single_member {
   margin-bottom: 50px; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1745,15 +1808,18 @@ footer .footer_btm {
     margin: 10px 0 20px;
     line-height: 34px; }
   .team_member_area .member_join .button-3 {
-    padding: 0 45px; }
+    padding: 0 45px; }*/
 
 /*
  *****************************************
  >>> | 18. jobs_tile_area CSS|
  *****************************************
 */
+
 .jobs_tile_area .single_job_tile > div {
-  padding: 80px 15px;
+  margin: 30px 0; /* Para separar los single_job_tile */
+  padding: 25px 25px;
+  /*padding: 80px 15px;*/
   background-color: #fbfbfb;
   border: 1px solid #dedede;
   text-align: center;
@@ -1763,18 +1829,23 @@ footer .footer_btm {
   .jobs_tile_area .single_job_tile > div:before {
     position: absolute;
     width: 100%;
-    height: 5px;
+    height: 10px;
     left: 0;
     top: -1px;
     content: ''; }
   .jobs_tile_area .single_job_tile > div span {
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: bold;
     display: block; }
+    /* Separar imagenes agregadas*/
+    .jobs_tile_area .single_job_tile > div img {
+      margin: 20px 0;
+    }
   .jobs_tile_area .single_job_tile > div h3 {
     margin: 10px 0 20px;
     line-height: 34px;
     font-size: 20px; }
-  .jobs_tile_area .single_job_tile > div span.date {
+  .jobs_tile_area .single_job_tile > div span.require {
     font-size: 13px;
     margin-bottom: 20px; }
   .jobs_tile_area .single_job_tile > div .button-3 {
@@ -1799,7 +1870,11 @@ footer .footer_btm {
 .jobs_tile_area .single_job_tile:nth-child(3) > div:before {
   background-color: #ef4836; }
 .jobs_tile_area .single_job_tile:nth-child(4) > div:before {
-  background-color: #bf55ec; }
+  background-color: #024959; }
+.jobs_tile_area .single_job_tile:nth-child(5) > div:before {
+  background-color: #919394; }
+.jobs_tile_area .single_job_tile:nth-child(6) > div:before {
+  background-color: #820333; }
 .jobs_tile_area .single_job_tile > span:hover {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); }
 
@@ -1808,6 +1883,7 @@ footer .footer_btm {
  >>> | 19. job_cta_area CSS|
  *****************************************
 */
+
 .job_cta_area .job_cta h3 {
   margin: 0 0 22px; }
 .job_cta_area .job_cta span {
@@ -1924,6 +2000,7 @@ footer .footer_btm {
  *****************************************
 */
 .work_area .single_work {
+  text-align: center; /* Centrar contenido */
   margin-bottom: 50px; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .work_area .single_work {
@@ -2015,6 +2092,7 @@ footer .footer_btm {
  >>> | 23. blog_area CSS|
  *****************************************
 */
+/*
 .blog_area.single-blog article .article_inner {
   padding: 15px;
   border: 1px solid #e7eaf7; }
@@ -2187,13 +2265,14 @@ footer .footer_btm {
     font-weight: 700;
     border: 1px solid transparent; }
     .blog_area .comment_form form input[type="submit"]:hover, .blog_area .comment_form form .form_area .contact_form .form-group textarea[type="submit"]:hover, .form_area .contact_form .form-group .blog_area .comment_form form textarea[type="submit"]:hover {
-      background-color: #ffffff; }
+      background-color: #ffffff; }*/
 
 /*
  *****************************************
  >>> | 24. 404 CSS|
  *****************************************
 */
+/*
 .error_area .error_col h1 {
   font-size: 230px;
   margin: 0;
@@ -2273,6 +2352,26 @@ footer .footer_btm {
         height: 60px; } }
     @media only screen and (min-width: 480px) and (max-width: 767px) {
       .error_area .widget_search input[type="search"], .error_area .widget_search .form_area .contact_form .form-group textarea[type="search"], .form_area .contact_form .form-group .error_area .widget_search textarea[type="search"] {
-        height: 60px; } }
+        height: 60px; } }*/
+
+
+/*
+ *****************************************
+ >>> | 25. case_area CSS|
+ *****************************************
+*/
+.client_area {
+  margin-top: 50px;
+}
+
+.single_client {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*
+color: #28477D; //Azul
+color: #C6922D //Dorado
+*/
 
 /*# sourceMappingURL=style.css.map */
